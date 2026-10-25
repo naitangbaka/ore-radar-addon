@@ -1,0 +1,36 @@
+const ICON = {
+    coal: String.fromCodePoint(0xF500),
+    iron: String.fromCodePoint(0xF501),
+    gold: String.fromCodePoint(0xF502),
+    diamond: String.fromCodePoint(0xF503),
+    netherite_scrap: String.fromCodePoint(0xF504),
+    emerald: String.fromCodePoint(0xF505),
+    copper: String.fromCodePoint(0xF506),
+    lapis: String.fromCodePoint(0xF507),
+    redstone: String.fromCodePoint(0xF508),
+    quartz: String.fromCodePoint(0xF509),
+    gold_nugget: String.fromCodePoint(0xF50A),
+};
+
+// 方块类型 -> 图标字形，未预设的矿块会退回显示本地化键名
+export const ORE_ICONS: Record<string, string> = {
+    'minecraft:coal_ore': ICON.coal,
+    'minecraft:deepslate_coal_ore': ICON.coal,
+    'minecraft:iron_ore': ICON.iron,
+    'minecraft:deepslate_iron_ore': ICON.iron,
+    'minecraft:gold_ore': ICON.gold,
+    'minecraft:deepslate_gold_ore': ICON.gold,
+    'minecraft:diamond_ore': ICON.diamond,
+    'minecraft:deepslate_diamond_ore': ICON.diamond,
+    'minecraft:ancient_debris': ICON.netherite_scrap,
+    'minecraft:emerald_ore': ICON.emerald,
+    'minecraft:deepslate_emerald_ore': ICON.emerald,
+    'minecraft:copper_ore': ICON.copper,
+    'minecraft:deepslate_copper_ore': ICON.copper,
+    'minecraft:lapis_ore': ICON.lapis,
+    'minecraft:deepslate_lapis_ore': ICON.lapis,
+    'minecraft:redstone_ore': ICON.redstone,
+    'minecraft:deepslate_redstone_ore': ICON.redstone,
+    'minecraft:quartz_ore': ICON.quartz,
+    'minecraft:nether_gold_ore': ICON.gold_nugget,
+};

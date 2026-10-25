@@ -1,0 +1,32 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:item": {
+    "description": {
+      "identifier": "xxr:diamond_radar"
+    },
+    "components": {
+      "minecraft:hover_text_color": "yellow",
+      "minecraft:icon": {
+        "textures": {
+          "default": "diamond_radar"
+        }
+      },
+      "minecraft:display_name": {
+        "value": "item.xxr:diamond_radar.name"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:durability": {
+        "max_durability": 10000
+      },
+      "minecraft:cooldown": {
+        "category": "ore_radar_use",
+        "duration": 33
+      },
+      "xxr:ore_radar": {
+        "searchRadius": 50,
+        "maxDisplay": 160,
+        "textTimeLeft": 180
+      }
+    }
+  }
+}

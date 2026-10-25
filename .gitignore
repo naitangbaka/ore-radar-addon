@@ -1,12 +1,19 @@
 # 依赖
 node_modules/
 
+# 打包发行版构建产物
+发行版/
+
 # TypeScript 编译产物与类型声明
 scripts/
 types/
 *.js
 *.js.map
 *.d.ts
+
+# IDE / 开发辅助
+.trae/
+skills/
 
 # 系统文件
 .DS_Store

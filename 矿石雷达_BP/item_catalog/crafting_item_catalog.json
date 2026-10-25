@@ -1,0 +1,24 @@
+{
+    "format_version": "1.21.60",
+    "minecraft:crafting_items_catalog": {
+        "categories": [
+            {
+                "category_name": "equipment",
+                "groups": [
+                    {
+                        "group_identifier": {
+                            "icon": "xxr:iron_radar",
+                            "name": "xxr:itemGroup.name.ore_radar"
+                        },
+                        "items": [
+                            "xxr:iron_radar",
+                            "xxr:golden_radar",
+                            "xxr:amethyst_radar",
+                            "xxr:diamond_radar"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

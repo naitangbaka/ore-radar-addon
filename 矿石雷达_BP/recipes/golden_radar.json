@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "golden_radar"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "###",
+      "#C#",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:gold_ingot"
+      },
+      "C": {
+        "item": "xxr:radar_chip"
+      }
+    },
+    "result": {
+      "item": "xxr:golden_radar",
+      "count": 1
+    }
+  }
+}

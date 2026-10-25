@@ -23,3 +23,6 @@ xxr.radar.list.whitelist=Whitelist
 xxr.radar.list.blacklist=Blacklist
 xxr.radar.auto_detect=Auto-detect ores (match by typeId)
 xxr.radar.ore_list=Ore Types to Scan
+
+## ===== Custom Group ===== 
+xxr:itemGroup.name.ore_radar=Ore Radar

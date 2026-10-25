@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "repair_diamond_radar"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "ingredients": [
+      {
+        "item": "xxr:diamond_radar"
+      },
+      {
+        "item": "xxr:radar_chip"
+      }
+    ],
+    "result": {
+      "item": "xxr:diamond_radar",
+      "count": 1
+    }
+  }
+}

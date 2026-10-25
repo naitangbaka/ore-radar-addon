@@ -23,3 +23,6 @@ xxr.radar.list.whitelist=白名单
 xxr.radar.list.blacklist=黑名单
 xxr.radar.auto_detect=自动检测矿石（按 typeId 匹配）
 xxr.radar.ore_list=扫描矿石类型
+
+## ===== 自定义组 =====
+xxr:itemGroup.name.ore_radar=矿石雷达

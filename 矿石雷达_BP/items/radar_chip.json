@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:item": {
+    "description": {
+      "identifier": "xxr:radar_chip",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:hover_text_color": "red",
+      "minecraft:icon": {
+        "textures": {
+          "default": "radar_chip"
+        }
+      },
+      "minecraft:display_name": {
+        "value": "item.xxr:radar_chip.name"
+      }
+    }
+  }
+}
