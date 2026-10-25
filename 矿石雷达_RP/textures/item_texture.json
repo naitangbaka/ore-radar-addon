@@ -1,0 +1,21 @@
+{
+	"resource_pack_name": "ore radar pack",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"iron_radar": {
+            "textures": "textures/items/iron_radar"
+        },
+        "radar_chip": {
+            "textures": "textures/items/radar_chip"
+        },
+        "amethyst_radar": {
+            "textures": "textures/items/amethyst_radar"
+        },
+        "diamond_radar": {
+            "textures": "textures/items/diamond_radar"
+        },
+        "golden_radar": {
+            "textures": "textures/items/golden_radar"
+        }
+	}
+}

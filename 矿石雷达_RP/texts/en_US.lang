@@ -1,0 +1,25 @@
+pack.name=Ore Radar RP
+pack.description=The resource pack for the Ore Radar addon.
+
+## ===== Item Names =====
+item.xxr:amethyst_radar.name=Amethyst Ore Radar
+item.xxr:iron_radar.name=Iron Ore Radar
+item.xxr:golden_radar.name=Golden Ore Radar
+item.xxr:diamond_radar.name=Diamond Ore Radar
+item.xxr:radar_chip.name=Deep Search Chip
+
+## ===== Script Localization =====
+xxr.radar.config_missing=§cRadar configuration is missing and cannot be used!
+xxr.radar.no_target=§cNo target found within %s blocks
+xxr.radar.found=Found §7%s§r target(s)
+xxr.radar.max_display=§7Marker limit reached, only marking the nearest %s target(s)
+xxr.radar.no_durability=§cThe radar has run out of durability and cannot be used!
+xxr.radar.scanning=§eScanning started, please wait...
+
+## ===== Interface =====
+xxr.radar.form_title=Radar Settings
+xxr.radar.list_type_label=List Type
+xxr.radar.list.whitelist=Whitelist
+xxr.radar.list.blacklist=Blacklist
+xxr.radar.auto_detect=Auto-detect ores (match by typeId)
+xxr.radar.ore_list=Ore Types to Scan
