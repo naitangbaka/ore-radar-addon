@@ -1,6 +1,3 @@
-pack.name=Ore Radar RP
-pack.description=The resource pack for the Ore Radar addon.
-
 ## ===== Item Names =====
 item.xxr:amethyst_radar.name=Amethyst Ore Radar
 item.xxr:iron_radar.name=Iron Ore Radar

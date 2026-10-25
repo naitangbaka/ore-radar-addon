@@ -1,6 +1,3 @@
-pack.name=矿石雷达 RP
-pack.description=能够探测并标记周围稀有矿石的辅助工具资源包。
-
 ## ===== 物品名称 =====
 item.xxr:amethyst_radar.name=紫水晶矿石雷达
 item.xxr:iron_radar.name=铁矿石雷达
