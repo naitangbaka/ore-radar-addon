@@ -31,6 +31,8 @@ export const ORE_ICONS: Record<string, string> = {
     'minecraft:deepslate_lapis_ore': ICON.lapis,
     'minecraft:redstone_ore': ICON.redstone,
     'minecraft:deepslate_redstone_ore': ICON.redstone,
+    'minecraft:lit_redstone_ore': ICON.redstone,
+    'minecraft:lit_deepslate_redstone_ore': ICON.redstone,
     'minecraft:quartz_ore': ICON.quartz,
     'minecraft:nether_gold_ore': ICON.gold_nugget,
 };

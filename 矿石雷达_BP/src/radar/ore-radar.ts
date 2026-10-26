@@ -47,8 +47,11 @@ export class OreRadar {
         if (!isOre) return false;
 
         // 名单过滤始终生效：白名单只扫选中矿石，黑名单排除选中矿石。
-        // 深层变体(minecraft:deepslate_*_ore)归一到主矿石再匹配
-        const baseTypeId = typeId.replace(/^minecraft:deepslate_/, 'minecraft:');
+        // 深层变体(minecraft:deepslate_*_ore)与点燃变体(minecraft:lit_*_ore)归一到主矿石再匹配
+        const baseTypeId = typeId
+            .replace(/^minecraft:lit_deepslate_/, 'minecraft:')
+            .replace(/^minecraft:deepslate_/, 'minecraft:')
+            .replace(/^minecraft:lit_/, 'minecraft:');
         const inList = settings.oreTypes.includes(baseTypeId);
         return settings.listType === ListType.Whitelist ? inList : !inList;
     }
@@ -301,11 +304,26 @@ export class OreRadar {
         this.playerMarkers.delete(player.id);
     }
 
-    // 注册雷达相关的事件（方块被破坏时清除对应标记）
+    // 注册雷达相关的事件（方块被破坏 / 维度切换 / 死亡时清除对应标记）
     register(): void {
         world.afterEvents.playerBreakBlock.subscribe((event) => {
             this.onBlockBreak(event);
         });
+
+        // 维度切换时清空该玩家在当前维度的标记，避免跨维度残留导致错误显示
+        world.afterEvents.playerDimensionChange.subscribe((event) => {
+            this.removePlayerMarkers(event.player);
+        });
+
+        // 玩家死亡时清空标记，避免死亡后残留显示
+        world.afterEvents.entityDie.subscribe(
+            (event) => {
+                if (!(event.deadEntity instanceof Player)) return;
+                this.isScanning.delete(event.deadEntity.id);
+                this.removePlayerMarkers(event.deadEntity);
+            },
+            { entityTypes: ['minecraft:player'] },
+        );
     }
 
     private onBlockBreak(event: { readonly block: Block }): void {
